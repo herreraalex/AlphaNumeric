@@ -9,7 +9,7 @@ leer x,y:
         aux0 = D[i-1:n,i-1]
         aux1 = diferenciaAdyacente(aux0)
         aux2 = restaVectorial(x[i:n],x[0:n-1-i+1])
-        D[i:n,i] = DivisionVectorial(aux1,np.transpose(aux2))
+        D[i:n,i] = DivisionVectorial(aux1,traspuesta(aux2))
     fin
 
     res = diagonal(D)
